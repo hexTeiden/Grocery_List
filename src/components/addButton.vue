@@ -24,5 +24,6 @@ export default {
   margin-right: 5px;
   cursor: pointer;
   min-height: 30px;
+  box-shadow: 2px 2px 24px 0 rgba(0, 0, 0, 0.3);
 }
 </style>
