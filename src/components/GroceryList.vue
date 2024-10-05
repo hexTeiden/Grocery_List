@@ -6,13 +6,18 @@ export default {
   components: {
     GroceryItems,
   },
+  methods: {
+    clearList() {
+      this.$refs.GroceryItems.groceries = [];
+    },
+  },
 };
 </script>
 
 <template>
   <div>
     <ul>
-      <GroceryItems />
+      <GroceryItems ref="groceries" />
     </ul>
   </div>
 </template>

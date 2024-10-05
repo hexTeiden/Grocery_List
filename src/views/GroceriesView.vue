@@ -11,6 +11,11 @@ export default {
     GroceryList,
     RemoveAllButton,
   },
+  methods: {
+    clearList() {
+      this.$refs.groceryItems.items = [];
+    },
+  },
 };
 </script>
 
@@ -19,19 +24,19 @@ export default {
     <h1>Grocery List</h1>
     <span>
       <Input />
-      <addButton @removeItems="clearList" />
+      <addButton />
     </span>
-    <GroceryList />
+    <GroceryList ref="groceryItems" />
 
-    <RemoveAllButton />
+    <RemoveAllButton @removeItems="clearList" />
   </div>
 </template>
 
 <style scoped>
 .orderBox {
   margin-top: 25vh;
-  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
-  background-color: white;
+  box-shadow: rgb(0 0 0 / 30%) 0px 0px 10px;
+  background-color: rgb(255, 255, 255, 10%);
   color: black;
   min-width: 500px;
 }

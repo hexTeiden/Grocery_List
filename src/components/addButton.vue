@@ -17,7 +17,8 @@ export default {
   border: none;
   border-radius: 5px;
   background-color: #b4acff;
-  min-width: 20%;
+  width: 20%;
+  min-width: 150px;
   color: black;
   margin-left: 10px;
   margin-right: 5px;

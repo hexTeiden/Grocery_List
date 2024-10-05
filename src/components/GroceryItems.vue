@@ -3,17 +3,18 @@ export default {
   name: 'GroceryItems',
   props: {
     Name: String,
+    items: Array,
   },
   data() {
     return {
-      items: ['Bacon', 'Milk', 'Eggs'],
+      groceries: ['Bacon', 'Milk', 'Eggs'],
     };
   },
 };
 </script>
 
 <template>
-  <li v-for="(item, index) in items" :key="index">{{ item }}</li>
+  <li v-for="(item, index) in groceries" :key="index" ref="groceries">{{ item }}</li>
 </template>
 
 <style scoped>
