@@ -3,7 +3,31 @@
 <template>
   <h1 class="welcome">Home</h1>
 
-  <div>
+  <div class="page">
+    <div class="contain left">
+      <div class="cont">
+        <h2>Why use grocery list?</h2>
+        <p>asdfasdf</p>
+      </div>
+    </div>
+    <div class="contain right">
+      <div class="cont">
+        <h2>Because</h2>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="contain left">
+      <div class="cont">
+        <h2>Why use grocery list?</h2>
+        <p>asdfasdf</p>
+      </div>
+    </div>
+    <div class="contain right">
+      <div class="cont">
+        <h2>Because</h2>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
     <div class="contain left">
       <div class="cont">
         <h2>Why use grocery list?</h2>

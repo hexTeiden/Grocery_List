@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <button class="addButton">Submit</button>
+  <button class="addButton">Add Item</button>
 </template>
 
 <style scoped>

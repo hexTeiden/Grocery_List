@@ -1,14 +1,28 @@
 <script>
-import GroceryItems from './GroceryItems.vue';
-
 export default {
   name: 'GroceryList',
-  components: {
-    GroceryItems,
+  props: {
+    Name: String,
+  },
+  data() {
+    return {
+      items: [
+        'Apples',
+        'Bananas',
+        'Carrots',
+        'Doritos',
+        'Eggs',
+        'Figs',
+        'Grapes',
+        'Honey',
+        'Ice Cream',
+        'Jelly',
+      ],
+    };
   },
   methods: {
     clearList() {
-      this.$refs.GroceryItems.groceries = [];
+      this.items = [];
     },
   },
 };
@@ -17,7 +31,7 @@ export default {
 <template>
   <div>
     <ul>
-      <GroceryItems ref="groceries" />
+      <li v-for="(item, index) in items" :key="index">{{ item }}</li>
     </ul>
   </div>
 </template>
