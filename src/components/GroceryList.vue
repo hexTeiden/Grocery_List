@@ -21,6 +21,9 @@ export default {
     };
   },
   methods: {
+    addItem(item) {
+      this.items.push(item);
+    },
     clearList() {
       this.items = [];
     },

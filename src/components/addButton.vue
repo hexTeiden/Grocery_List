@@ -5,11 +5,16 @@ export default {
     type: String,
     placeholder: String,
   },
+  methods: {
+    addItem(item) {
+      this.$refs.items.push(item);
+    },
+  },
 };
 </script>
 
 <template>
-  <button class="addButton">Add Item</button>
+  <button class="addButton" @click="addItem">Add Item</button>
 </template>
 
 <style scoped>

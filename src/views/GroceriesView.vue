@@ -1,19 +1,28 @@
 <script>
-import Input from '../components/Input.vue';
 import addButton from '../components/addButton.vue';
 import GroceryList from '../components/GroceryList.vue';
 import RemoveAllButton from '../components/RemoveAllButton.vue';
 
 export default {
   components: {
-    Input,
     addButton,
     GroceryList,
     RemoveAllButton,
   },
+  data() {
+    return {
+      newItem: '', // Add a data property to hold the new item
+    };
+  },
   methods: {
     clearList() {
       this.$refs.groceryItems.items = [];
+    },
+    addItemToList() {
+      if (this.newItem.trim() !== '') {
+        this.$refs.groceryItems.addItem(this.newItem);
+        this.newItem = ''; // Clear the input after adding the item
+      }
     },
   },
 };
@@ -23,8 +32,9 @@ export default {
   <div class="orderBox">
     <h1>Grocery List</h1>
     <span>
-      <Input />
-      <addButton />
+      <input type="text" placeholder="Write your grocery item" v-model="newItem" />
+      <addButton @addItem="addItemToList" />
+      <!-- FIXME: Fix the add button that is currently throwing an error message -->
     </span>
     <GroceryList ref="groceryItems" />
 
@@ -49,5 +59,14 @@ h1 {
 
 span {
   display: inline;
+}
+input {
+  margin-left: 25px;
+  width: 75%;
+  min-width: 150px;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  min-height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 </style>
