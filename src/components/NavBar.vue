@@ -5,19 +5,13 @@
     <nav class="nav">
       <ul class="navList">
         <li>
-          <button class="btn">
-            <RouterLink to="/">Home</RouterLink>
-          </button>
+          <RouterLink to="/"><button class="btn">Home</button></RouterLink>
         </li>
         <li>
-          <button class="btn">
-            <RouterLink to="/groceries"> Groceries </RouterLink>
-          </button>
+          <RouterLink to="/groceries"> <button class="btn">Groceries</button></RouterLink>
         </li>
         <li>
-          <button class="btn">
-            <RouterLink to="/about"> About </RouterLink>
-          </button>
+          <RouterLink to="/about"> <button class="btn">About</button> </RouterLink>
         </li>
       </ul>
     </nav>
