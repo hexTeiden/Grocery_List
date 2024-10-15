@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 .orderBox {
-  margin-top: 25vh;
+  margin-top: 5vh;
   box-shadow: rgb(0 0 0 / 30%) 0px 0px 10px;
   background-color: rgb(255, 255, 255, 10%);
   color: black;

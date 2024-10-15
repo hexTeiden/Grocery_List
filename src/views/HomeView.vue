@@ -2,18 +2,17 @@
 
 <template>
   <h1 class="welcome">Home</h1>
-
   <div class="page">
     <div class="contain left">
       <div class="cont">
         <h2>Box 1</h2>
         <p>
-          Velit eiusmod eu commodo mollit magna irure veniam adipisicing Lorem duis labore do ut in.
-          Est id labore excepteur veniam magna culpa do magna anim proident occaecat. Ea excepteur
-          occaecat est cillum aliqua ut sunt amet elit. Ipsum aute proident non in. Aliqua deserunt
-          labore cupidatat labore ad enim commodo. Proident ullamco aliqua labore esse consectetur
-          sit ullamco ea incididunt cupidatat. Occaecat proident reprehenderit excepteur laborum
-          aliquip sit magna nostrud.
+          Cillum Lorem nisi velit tempor esse occaecat quis ipsum ad consequat veniam nostrud Lorem.
+          Nulla pariatur aliquip magna sunt dolor laboris occaecat aliqua commodo eu et. Et anim
+          incididunt duis sunt reprehenderit elit do est sint nulla excepteur mollit exercitation
+          aliquip. Exercitation occaecat veniam Lorem nisi. Mollit esse laboris Lorem aute
+          reprehenderit enim pariatur id nisi aliquip. Anim excepteur ipsum exercitation sunt
+          consectetur laborum. Proident laborum proident et adipisicing nulla deserunt.
         </p>
       </div>
     </div>
