@@ -2,12 +2,14 @@
 import addButton from '../components/addButton.vue';
 import GroceryList from '../components/GroceryList.vue';
 import RemoveAllButton from '../components/RemoveAllButton.vue';
+import sortButton from '@/components/sortButton.vue';
 
 export default {
   components: {
     addButton,
     GroceryList,
     RemoveAllButton,
+    sortButton,
   },
   data() {
     return {
@@ -24,6 +26,9 @@ export default {
         this.newItem = ''; // Clear the input after adding the item
       }
     },
+    sortItems() {
+      this.$refs.groceryItems.items.sort();
+    },
   },
 };
 </script>
@@ -34,11 +39,17 @@ export default {
     <span>
       <input type="text" placeholder="Write your grocery item" v-model="newItem" />
       <addButton @addItem="addItemToList" />
-      <!-- FIXME: Fix the add button that is currently throwing an error message -->
     </span>
     <GroceryList ref="groceryItems" />
 
-    <RemoveAllButton @removeItems="clearList" />
+    <ul class="buttonList">
+      <li>
+        <RemoveAllButton @removeItems="clearList" />
+      </li>
+      <li>
+        <sortButton @sortItems="sortItems" />
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -49,6 +60,17 @@ export default {
   background-color: rgb(255, 255, 255, 10%);
   color: black;
   min-width: 500px;
+}
+
+.buttonList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.buttonList li {
+  display: inline;
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
 h1 {

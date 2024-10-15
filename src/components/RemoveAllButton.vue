@@ -20,6 +20,7 @@ export default {
   border-radius: 5px;
   background-color: white;
   min-width: 15%;
+  max-width: 50%;
   color: #ff7f7f;
   margin-bottom: 10px;
   margin-left: 40%;

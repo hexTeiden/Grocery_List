@@ -14,6 +14,11 @@
             <RouterLink to="/groceries"> Groceries </RouterLink>
           </button>
         </li>
+        <li>
+          <button class="btn">
+            <RouterLink to="/about"> About </RouterLink>
+          </button>
+        </li>
       </ul>
     </nav>
   </div>

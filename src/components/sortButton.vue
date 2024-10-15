@@ -1,24 +1,24 @@
 <script>
 export default {
-  name: 'addButton',
+  name: 'sortButton',
   props: {
     type: String,
     placeholder: String,
   },
   methods: {
-    addItem(item) {
-      this.$emit('addItem');
+    sortItems() {
+      this.$emit('sortItems');
     },
   },
 };
 </script>
 
 <template>
-  <button class="addButton" @click="addItem">Add Item</button>
+  <button class="sortButton" @click="sortItems">Sort Items</button>
 </template>
 
 <style scoped>
-.addButton {
+.sortButton {
   border: none;
   border-radius: 5px;
   background-color: #b4acff;

@@ -8,14 +8,14 @@ export default {
     return {
       items: [
         'Apples',
-        'Bananas',
+        'Ice Cream',
+        'Eggs',
         'Carrots',
         'Doritos',
-        'Eggs',
+        'Honey',
         'Figs',
         'Grapes',
-        'Honey',
-        'Ice Cream',
+        'Bananas',
         'Jelly',
       ],
     };
@@ -26,6 +26,9 @@ export default {
     },
     clearList() {
       this.items = [];
+    },
+    sortItems() {
+      this.items.sort();
     },
   },
 };
